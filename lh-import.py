@@ -15,7 +15,7 @@ mydb = mysql.connector.connect(
   host=mysql_host,
   user=mysql_user,
   passwd=myql_user_password,
-  database=mysql_user_password
+  database=mysql_database
 )
 
 # Initialize the db object
@@ -66,5 +66,5 @@ with open("characters.json","r") as json_file:
                         mycursor.execute(query)
                         mydb.commit()
                     file.close()
-print("The characters and their corresponding realms have been output into separate json files for editing and or manual importing")
+print("The characters and their corresponding realms have been output into separate json files for editing and or manual importing\n")
 
